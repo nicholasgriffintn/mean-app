@@ -1,0 +1,111 @@
+    <mat-sidenav-container class="main-sidenav-container">
+      <mat-sidenav #sidenav class="main-sidenav">
+        I am a sidebar!
+      </mat-sidenav>
+      <mat-toolbar class="main-nav" color="transparent">
+          
+              <span>MY_MEAN_APP</span>
+              <span class="menu-spacer"></span>
+              <button mat-button mat-button (click)="sidenav.open()"><mat-icon>menu</mat-icon></button>
+              
+      </mat-toolbar>
+    </mat-sidenav-container>
+    <div id="main-page-wrapper">
+      <div class="main-page-container">
+        <div class="homepage-header-img-wrapper">
+          <div class="homepage-header-img-slider">
+            <div class="homepage-header-img-slider-slide">
+              <div class="slide-bacground-img" style="background-image: url(https://static.pexels.com/photos/18296/pexels-photo.jpg);"></div>
+              <div class="slide-background-overlay"></div>
+              <div class="slide-content-wrapper">
+              <div class="slide-content">
+                  <h1 class="slide-content-title">Here's some content</h1>
+                  <h2 class="slide-content-subtitle">Here's some content</h2>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-content-wrapper">
+            <div class="main-content-wrapper">
+            <div class="main-content-container">
+                <p class="opener main-content-paragraph">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then</p>
+                <p class="main-content-paragraph">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary</p>
+                <p class="main-content-paragraph">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary</p>
+            </div></div> <!-- ./ Main Content Container -->
+            <div class="products-content-wrapper">
+            <div class="products-content-container">
+                <div class="products-content-container-grid">
+                    <div class="products-content-container-grid-row-4">
+                        <mat-card class="product-card" *ngFor="let data of (myData ? myData.slice(0,1): []); let i = index">
+                            
+                              <img mat-card-image src="{{ data.url }}">
+                              <mat-card-header>
+                                <mat-card-title>{{ data.title }}</mat-card-title>
+                              </mat-card-header>
+                            
+                              <mat-card-actions>
+                                <button mat-button>VIEW</button>
+                                <button mat-button>SHARE</button>
+                              </mat-card-actions>
+                              
+                        </mat-card>
+                      </div>
+                    <div class="products-content-container-grid-row-4">
+                            <mat-card class="product-card" *ngFor="let data of (myData ? myData.slice(0,1): []); let i = index">
+                                
+                                  <img mat-card-image src="{{ data.url }}">
+                                  <mat-card-header>
+                                    <mat-card-title>{{ data.title }}</mat-card-title>
+                                  </mat-card-header>
+                                
+                                  <mat-card-actions>
+                                    <button mat-button>VIEW</button>
+                                    <button mat-button>SHARE</button>
+                                  </mat-card-actions>
+                                  
+                            </mat-card>
+                          </div>
+                          <div class="products-content-container-grid-row-4">
+                            <mat-card class="product-card" *ngFor="let data of (myData ? myData.slice(0,1): []); let i = index">
+                                
+                                  <img mat-card-image src="{{ data.url }}">
+                                  <mat-card-header>
+                                    <mat-card-title>{{ data.title }}</mat-card-title>
+                                  </mat-card-header>
+                                
+                                  <mat-card-actions>
+                                    <button mat-button>VIEW</button>
+                                    <button mat-button>SHARE</button>
+                                  </mat-card-actions>
+                                  
+                            </mat-card>
+                          </div>
+                          <div class="products-content-container-grid-row-4">
+                              <mat-card class="product-card" *ngFor="let data of (myData ? myData.slice(0,1): []); let i = index">
+                                  
+                                    <img mat-card-image src="{{ data.url }}">
+                                    <mat-card-header>
+                                      <mat-card-title>{{ data.title }}</mat-card-title>
+                                    </mat-card-header>
+                                  
+                                    <mat-card-actions>
+                                      <button mat-button>VIEW</button>
+                                      <button mat-button>SHARE</button>
+                                    </mat-card-actions>
+                                    
+                              </mat-card>
+                            </div>
+                        </div>
+            </div></div> <!-- ./ Products Content Container -->
+            <div class="footer-content-wrapper">
+            <div class="footer-content-container">
+              <div class="footer-content-stuff">
+                <p>This is a footer!!</p>
+              </div>
+            </div></div> <!-- ./ Footer Content Wrapper -->
+
+        </div> <!-- ./ Main Content Wrapper -->
+
+      </div> <!-- ./ Main Page Container -->
+    </div> <!-- ./ Main Page Wrapper -->

@@ -1,0 +1,183 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/purple-green.css";
+
+body {
+    background:#fff;
+    margin: 0px;
+}
+.main-sidenav-container {
+    width: 100%;
+    height: 100%;
+    position: absolute!important;
+    background: transparent!important;
+    border: none;
+  }
+  
+  .main-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+.mat-toolbar {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+  .main-sidenav {
+    padding: 20px;
+  }
+  .main-page-container, #main-page-wrapper {
+      background: #fff;
+  }
+  .mat-drawer {
+    position: fixed!important;
+    height: 100vh;
+    left: 0;
+    max-width: 50vw;
+    min-width: 20vw!important;
+}
+.mat-drawer-container {
+    background-color: #fff;
+    color: #000;
+}
+.mat-drawer-content, .mat-drawer-backdrop.mat-drawer-shown {
+    position: fixed!important;
+}
+#main-page-wrapper {
+    width: 100vw;
+    height: auto;
+}
+.main-page-container {
+    width: 100vw;
+    height: auto;
+}
+.homepage-header-img-wrapper {
+    width: 100vw;
+    height: 60vh;
+    background: #000;
+    color: #ddd;
+}
+.homepage-header-img-slider, .homepage-header-img-slider-slide, .slide-bacground-img, .slide-background-overlay {
+    width: 100%;
+    height: 100%;
+}
+.homepage-header-img-slider, .homepage-header-img-slider-slide {
+    position: relative;
+}
+.homepage-header-img-slider, .homepage-header-img-slider-slide {
+    position: relative;
+}
+.slide-background-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+background: -moz-linear-gradient(45deg, rgba(147,37,29,0.4) 0%, rgba(191,36,36,0.27) 38%, rgba(129,24,24,0.2) 58%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, rgba(147,37,29,0.4) 0%,rgba(191,36,36,0.27) 38%,rgba(129,24,24,0.2) 58%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, rgba(147,37,29,0.4) 0%,rgba(191,36,36,0.27) 38%,rgba(129,24,24,0.2) 58%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6693251d', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.slide-content {
+    position: absolute;
+    left: 30px;
+    top: 25%;
+}
+.slide-content-wrapper {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.main-content-wrapper {
+    width: 100%;
+    height: auto;
+}
+.main-content-container, .products-content-container, .footer-content-container {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    margin-top: 50px;
+}
+.main-content-wrapper, .products-content-wrapper, .footer-content-wrapper {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    float: left;
+}
+.slide-bacground-img {
+    background-size: cover;
+    background-position: left center;
+}
+.main-content-paragraph {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+.products-content-container-grid-row-3 {
+    width: 31.333%;
+    float: left;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.products-content-container-grid-row-4 {
+    width: 23%;
+    float: left;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 900px) {
+    .products-content-container-grid-row-3, .products-content-container-grid-row-4 {
+        width: 48%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .products-content-container-grid-row-3, .products-content-container-grid-row-4 {
+        width: 100%;
+    }
+}
+.slide-content-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.products-content-container-grid {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.footer-content-wrapper {
+    background: #333;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 50px;
+}
+.footer-content-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    background: #333;
+}
+.slide-content-title {
+    margin: 0px;
+    background: rgba(0, 0, 0, 0.88);
+    padding: 10px;
+    width: auto;
+    color: #ddd;
+}
+.footer-content-stuff {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.slide-content-subtitle {
+    width: auto;
+    float: left;
+    margin: 0px;
+    background: rgba(221, 221, 221, 0.7);
+    padding: 10px;
+    color: #333;
+}
