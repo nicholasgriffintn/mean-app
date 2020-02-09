@@ -1,0 +1,10 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "my-mean-app/package.json",
+        "package.json"
+      ]
+    }
+  }
+}
